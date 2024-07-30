@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		var gform;
+		gform || (document.addEventListener("gform_main_scripts_loaded", function () {
+			gform.scriptsLoaded = !0
+		}), window.addEventListener("DOMContentLoaded", function () {
+			gform.domLoaded = !0
+		}), gform = {
+			domLoaded: !1, scriptsLoaded: !1, initializeOnLoaded: function (o) {
+				gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded
+						? window.addEventListener("DOMContentLoaded", o) : document.addEventListener(
+								"gform_main_scripts_loaded", o)
+			}, hooks: {action: {}, filter: {}}, addAction: function (o, n, r, t) {
+				gform.addHook("action", o, n, r, t)
+			}, addFilter: function (o, n, r, t) {
+				gform.addHook("filter", o, n, r, t)
+			}, doAction: function (o) {
+				gform.doHook("action", o, arguments)
+			}, applyFilters: function (o) {
+				return gform.doHook("filter", o, arguments)
+			}, removeAction: function (o, n) {
+				gform.removeHook("action", o, n)
+			}, removeFilter: function (o, n, r) {
+				gform.removeHook("filter", o, n, r)
+			}, addHook: function (o, n, r, t, i) {
+				null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+				var e = gform.hooks[o][n];
+				null == i && (i = n + "_" + e.length), gform.hooks[o][n].push(
+						{tag: i, callable: r, priority: t = null == t ? 10 : t})
+			}, doHook: function (n, o, r) {
+				var t;
+				if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o]
+				&& ((o = gform.hooks[n][o]).sort(function (o, n) {
+					return o.priority - n.priority
+				}), o.forEach(function (o) {
+					"function" != typeof (t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r)
+							: r[0] = t.apply(null, r)
+				})), "filter" == n) {
+					return r[0]
+				}
+			}, removeHook: function (o, n, t, i) {
+				var r;
+				null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function (o, n, r) {
+					return !!(null != i && i != o.tag || null != t && t != o.priority)
+				}), gform.hooks[o][n] = r)
+			}
+		});
+	</script>
+
+	<meta charset="UTF-8"/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+	<link rel="profile" href="https://gmpg.org/xfn/11"/>
+	<meta name='robots'
+				content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Holy Ghost Church | Parish Activities</title>
+	<meta name="description"
+				content="Explore our parish activities and see how you can become involved with the church from social ministry, weddings, RCIA, lectors, religious education and clubs and bible study. We guide men and women hoping to experience the joy of encountering the Lord through the scriptures. Contact us today."/>
+	<link rel="canonical" href="https://holyghostchurch.org/social-ministry/"/>
+	<meta property="og:locale" content="en_US"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:title" content="Holy Ghost Church | Parish Activities"/>
+	<meta property="og:description"
+				content="Explore our parish activities and see how you can become involved with the church from social ministry, weddings, RCIA, lectors, religious education and clubs and bible study. We guide men and women hoping to experience the joy of encountering the Lord through the scriptures. Contact us today."/>
+	<meta property="og:url" content="https://holyghostchurch.org/social-ministry/"/>
+	<meta property="og:site_name" content="Holy Ghost Catholic Church"/>
+	<meta property="article:modified_time" content="2024-03-22T13:35:37+00:00"/>
+	<meta property="og:image"
+				content="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/10.jpg"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<script type="application/ld+json" class="yoast-schema-graph">{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "WebPage",
+				"@id": "https://holyghostchurch.org/social-ministry/",
+				"url": "https://holyghostchurch.org/social-ministry/",
+				"name": "Holy Ghost Church | Parish Activities",
+				"isPartOf": {
+					"@id": "https://n8le08.p3cdn1.secureserver.net/#website"
+				},
+				"primaryImageOfPage": {
+					"@id": "https://holyghostchurch.org/social-ministry/#primaryimage"
+				},
+				"image": {
+					"@id": "https://holyghostchurch.org/social-ministry/#primaryimage"
+				},
+				"thumbnailUrl": "https://holyghostchurch.org/wp-content/uploads/2019/03/10.jpg",
+				"datePublished": "2023-10-05T16:34:33+00:00",
+				"dateModified": "2024-03-22T13:35:37+00:00",
+				"description": "Explore our parish activities and see how you can become involved with the church from social ministry, weddings, RCIA, lectors, religious education and clubs and bible study. We guide men and women hoping to experience the joy of encountering the Lord through the scriptures. Contact us today.",
+				"breadcrumb": {
+					"@id": "https://n8le08.p3cdn1.secureserver.net/social-ministry/#breadcrumb"
+				},
+				"inLanguage": "en-US",
+				"potentialAction": [
+					{
+						"@type": "ReadAction",
+						"target": [
+							"https://holyghostchurch.org/social-ministry/"
+						]
+					}
+				]
+			},
+			{
+				"@type": "ImageObject",
+				"inLanguage": "en-US",
+				"@id": "https://holyghostchurch.org/social-ministry/#primaryimage",
+				"url": "https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/10.jpg?time=1722343624",
+				"contentUrl": "https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/10.jpg?time=1722343624",
+				"width": 234,
+				"height": 280,
+				"caption": "Holy Ghost Church Catholic Church"
+			},
+			{
+				"@type": "BreadcrumbList",
+				"@id": "https://holyghostchurch.org/social-ministry/#breadcrumb",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Home",
+						"item": "https://holyghostchurch.org/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Social Ministry"
+					}
+				]
+			},
+			{
+				"@type": "WebSite",
+				"@id": "https://holyghostchurch.org/#website",
+				"url": "https://holyghostchurch.org/",
+				"name": "Holy Ghost Catholic Church",
+				"description": "",
+				"potentialAction": [
+					{
+						"@type": "SearchAction",
+						"target": {
+							"@type": "EntryPoint",
+							"urlTemplate": "https://holyghostchurch.org/?s={search_term_string}"
+						},
+						"query-input": "required name=search_term_string"
+					}
+				],
+				"inLanguage": "en-US"
+			}
+		]
+	}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+	<link rel='dns-prefetch' href='//n8le08.p3cdn1.secureserver.net'/>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+	<link href='https://fonts.gstatic.com' crossorigin rel='preconnect'/>
+	<link rel="alternate" type="application/rss+xml" title="Holy Ghost Catholic Church &raquo; Feed"
+				href="https://holyghostchurch.org/feed/"/>
+	<link rel="alternate" type="application/rss+xml"
+				title="Holy Ghost Catholic Church &raquo; Comments Feed"
+				href="https://holyghostchurch.org/comments/feed/"/>
+	<link rel='preconnect' href='https://n8le08.p3cdn1.secureserver.net' crossorigin/>
+	<link rel="preload"
+				href="https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/webfonts/fa-solid-900.woff2"
+				as="font" type="font/woff2" crossorigin="anonymous">
+	<script>
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+			"svgExt": ".svg",
+			"source": {"concatemoji": "https:\/\/n8le08.p3cdn1.secureserver.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5&time=1722343624"}
+		};
+		/*! This file is auto-generated */
+		!function (i, n) {
+			var o, s, e;
+
+			function c(e) {
+				try {
+					var t = {supportTests: e, timestamp: (new Date).valueOf()};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {
+				}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+						r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0,
+								0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function (e, t) {
+					return e === r[t]
+				})
+			}
+
+			function u(e, t, n) {
+				switch (t) {
+					case"flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+								"\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3",
+								"\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
+								"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+								"\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case"emoji":
+						return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
+				}
+				return !1
+			}
+
+			function f(e, t, n) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope
+								? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+						a = r.getContext("2d", {willReadFrequently: !0}),
+						o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+				return e.forEach(function (e) {
+					o[e] = t(a, e, n)
+				}), o
+			}
+
+			function t(e) {
+				var t = i.createElement("script");
+				t.src = e, t.defer = !0, i.head.appendChild(t)
+			}
+
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag",
+				"emoji"], n.supports = {everything: !0, everythingExceptFlag: !0}, e = new Promise(
+					function (e) {
+						i.addEventListener("DOMContentLoaded", e, {once: !0})
+					}), new Promise(function (t) {
+				var n = function () {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf()
+								< e.timestamp + 604800 && "object" == typeof e.supportTests) {
+							return e.supportTests
+						}
+					} catch (e) {
+					}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined"
+							!= typeof URL && URL.createObjectURL && "undefined" != typeof Blob) {
+						try {
+							var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(),
+										p.toString()].join(",") + "));", r = new Blob([e], {type: "text/javascript"}),
+									a = new Worker(URL.createObjectURL(r), {name: "wpTestEmojiSupports"});
+							return void (a.onmessage = function (e) {
+								c(n = e.data), a.terminate(), t(n)
+							})
+						} catch (e) {
+						}
+					}
+					c(n = f(s, u, p))
+				}
+				t(n)
+			}).then(function (e) {
+				for (var t in e) {
+					n.supports[t] = e[t], n.supports.everything = n.supports.everything
+							&& n.supports[t], "flag" !== t
+					&& (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				}
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag
+						&& !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () {
+					n.DOMReady = !0
+				}
+			}).then(function () {
+				return e
+			}).then(function () {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(
+						e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+	</script>
+	<style id='wp-emoji-styles-inline-css'>
+
+		img.wp-smiley, img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='wp-block-library-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-includes/css/dist/block-library/style.min.css?ver=6.5.5&#038;time=1722343624'
+				media='all'/>
+	<style id='wp-block-library-theme-inline-css'>
+		.wp-block-audio figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio figcaption {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed figcaption {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		.wp-block-image figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-image figcaption {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite, .wp-block-pullquote footer, .wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite, .wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote.has-text-align-right {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote.has-text-align-center {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large, .wp-block-quote.is-style-large, .wp-block-quote.is-style-plain {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td, .wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table figcaption {
+			color: #ffffffa6
+		}
+
+		.wp-block-video figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video figcaption {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		.wp-block-template-part.has-background {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id='classic-theme-styles-inline-css'>
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id='global-styles-inline-css'>
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		body .is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		body .is-layout-flex > * {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		body .is-layout-grid > * {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		.wp-block-pullquote {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel='stylesheet' id='font-awesome-5-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/all.min.css?ver=2.5.4.3&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='fl-builder-layout-1306-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-plugin/cache/1306-layout.css?ver=9314329c5f8db99424367aba0b5bad6b&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='font-awesome-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/v4-shims.min.css?ver=2.5.4.3&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='ultimate-icons-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.5.4.3&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='fl-builder-layout-bundle-ab11f5e63b1bc6f8f541ff103e580010-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-plugin/cache/ab11f5e63b1bc6f8f541ff103e580010-layout-bundle.css?ver=2.5.4.3-1.4.2&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='jquery-magnificpopup-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.5.4.3&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='base-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/themes/bb-theme/css/base.min.css?ver=1.7.11&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='fl-automator-skin-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-theme/skin-648b7dfd86bbc.css?ver=1.7.11&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='pp-animate-css'
+				href='https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1&#038;time=1722343624'
+				media='all'/>
+	<link rel='stylesheet' id='fl-builder-google-fonts-e4e5f95c9ca291b1dad0528e4a1fbd42-css'
+				href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C400%7CGreat+Vibes%3A400%2C700&#038;ver=6.5.5'
+				media='all'/>
+	<script
+			src="https://n8le08.p3cdn1.secureserver.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1&amp;time=1722343624"
+			id="jquery-core-js"></script>
+	<script
+			src="https://n8le08.p3cdn1.secureserver.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1&amp;time=1722343624"
+			id="jquery-migrate-js"></script>
+	<script
+			src="https://n8le08.p3cdn1.secureserver.net/wp-includes/js/imagesloaded.min.js?time=1722343624&amp;ver=6.5.5"
+			id="imagesloaded-js"></script>
+	<link rel="https://api.w.org/" href="https://holyghostchurch.org/wp-json/"/>
+	<link rel="alternate" type="application/json"
+				href="https://holyghostchurch.org/wp-json/wp/v2/pages/1306"/>
+	<link rel="EditURI" type="application/rsd+xml" title="RSD"
+				href="https://holyghostchurch.org/xmlrpc.php?rsd"/>
+	<meta name="generator" content="WordPress 6.5.5"/>
+	<link rel='shortlink' href='https://holyghostchurch.org/?p=1306'/>
+	<link rel="alternate" type="application/json+oembed"
+				href="https://holyghostchurch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fholyghostchurch.org%2Fsocial-ministry%2F"/>
+	<link rel="alternate" type="text/xml+oembed"
+				href="https://holyghostchurch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fholyghostchurch.org%2Fsocial-ministry%2F&#038;format=xml"/>
+	<script>
+		var bb_powerpack = {
+			ajaxurl: 'https://holyghostchurch.org/wp-admin/admin-ajax.php'
+		};
+	</script>
+	<style>.recentcomments a {
+		display: inline !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}</style>
+	<link rel="icon"
+				href="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/favicon.png?time=1722343624"
+				sizes="32x32"/>
+	<link rel="icon"
+				href="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/favicon.png?time=1722343624"
+				sizes="192x192"/>
+	<link rel="apple-touch-icon"
+				href="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/favicon.png?time=1722343624"/>
+	<meta name="msapplication-TileImage"
+				content="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/favicon.png?time=1722343624"/>
+	<style id="wp-custom-css">
+		header {
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+		}
+
+		footer .pp-advanced-menu .menu a {
+			display: inline-block;
+		}
+
+		ul#menu-main-menu-1 > li#menu-item-165 {
+			display: inline-block;
+		}
+
+		ul#menu-main-menu-1 > li#menu-item-132 {
+			display: inline-block;
+		}
+
+		.fl-node-5d5699922978d .pp-infolist-wrap .layout-1 .pp-icon-wrapper {
+			margin-right: 9px;
+		}
+
+		.fl-builder-content .fl-node-5d569a9ae5045 .uabb-imgicon-wrap {
+			margin-right: 14px;
+		}
+
+
+		/*----------------------------
+        Form Thank You message center
+    -----------------------------*/
+
+		.gform_confirmation_wrapper {
+			text-align: center;
+		}
+
+		.fl-builder-content[data-type="header"].fl-theme-builder-header-shrink img {
+			max-height: 90px;
+		}
+
+		@media only screen and (min-width: 1200px) and (max-width: 1290px) {
+
+		}
+
+		@media only screen and (max-width: 1024px) {
+			.fl-theme-builder-header-scrolled .fl-node-5c659b3991982 .fl-icon-wrap {
+				margin-top: 10px;
+			}
+
+		}
+
+		@media only screen and (min-width: 991px) and (max-width: 1199px) {
+			.col-1 {
+				width: 2% !important;
+			}
+
+			.col-2, .col-3 {
+				width: 49% !important;
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			.pp-infolist-wrap .layout-1 {
+				text-align: -webkit-center;
+			}
+
+			h1.heading-title,
+			h1.heading-title a {
+				font-size: 40px ! important;
+			}
+
+			h2.heading-title,
+			h2.heading-title a {
+				font-size: 38px !important;
+			}
+
+			h3.heading-title,
+			h3.heading-title a {
+				font-size: 28px !important;
+			}
+
+			h4.heading-title,
+			h4.heading-title a {
+				font-size: 22px !important;
+			}
+
+			h5.heading-title,
+			h5.heading-title a {
+				font-size: 20px !important;
+			}
+
+			.fl-col-small {
+				max-width: 100%;
+			}
+
+			.fl-node-5c861a2d8b953 p {
+				text-align: left !important;
+			}
+
+			/* Header position on mobile */
+			.fl-builder-content[data-overlay="1"]:not(.fl-theme-builder-header-sticky) {
+				position: relative;
+			}
+
+			.fl-rich-text p {
+				text-align: center !important;
+			}
+
+			.copyright {
+				text-align: center !important;
+			}
+
+			.godaddyfooter div {
+				text-align: center !important;
+			}
+
+			.pp-advanced-menu .menu {
+				margin-top: 0px !important;
+			}
+
+		}
+
+
+		/*------------------------------------
+                (max-width: 480px)
+    --------------------------------------*/
+
+		@media only screen and (max-width: 480px) {
+		}
+
+
+		/*------------------------------------
+                (max-width: 1024px)
+    --------------------------------------*/
+
+		@media only screen and (max-width: 1024px) {
+
+		}    </style>
+</head>
+<body
+		class="page-template-default page page-id-1306 fl-builder fl-theme-builder-header fl-theme-builder-header-header fl-theme-builder-footer fl-theme-builder-footer-footer fl-framework-base fl-preset-default fl-full-width fl-scroll-to-top fl-search-active"
+		itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to
+	content</a>
+<div class="fl-page">
+	<header class="fl-builder-content fl-builder-content-23 fl-builder-global-templates-locked"
+					data-post-id="23" data-type="header" data-sticky="1" data-sticky-on=""
+					data-sticky-breakpoint="medium" data-shrink="0" data-overlay="0" data-overlay-bg="default"
+					data-shrink-image-height="50px" role="banner" itemscope="itemscope"
+					itemtype="http://schema.org/WPHeader">
+		<div id="head3header" class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c659b3991982"
+				 data-node="5c659b3991982">
+			<div class="fl-row-content-wrap">
+				<div class="uabb-row-separator uabb-top-row-separator">
+				</div>
+				<div class="fl-row-content fl-row-full-width fl-node-content">
+
+					<div
+							class="fl-col-group fl-node-5c659b3991988 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width"
+							data-node="5c659b3991988">
+						<div class="fl-col fl-node-5c659b399198a fl-col-small" data-node="5c659b399198a">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-pp-image fl-node-5c659b3991999"
+										 data-node="5c659b3991999">
+									<div class="fl-module-content fl-node-content">
+										<div class="pp-photo-container">
+											<div class="pp-photo pp-photo-align-left pp-photo-align-responsive-center"
+													 itemscope itemtype="http://schema.org/ImageObject">
+												<div class="pp-photo-content">
+													<div class="pp-photo-content-inner">
+														<a href="https://holyghostchurch.org" target="_self" itemprop="url">
+															<img loading="lazy" decoding="async" width="153" height="168"
+																	 class="pp-photo-img wp-image-24"
+																	 src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/02/logo.jpg"
+																	 alt="Holy Ghost Church Catholic Church" itemprop="image"
+																	 title="logo"/>
+															<div class="pp-overlay-bg"></div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5d568a7ed71cc fl-col-small" data-node="5d568a7ed71cc">
+							<div class="fl-col-content fl-node-content">
+								<div
+										class="fl-module fl-module-rich-text fl-node-ua0erhtio39y fl-visible-desktop-medium"
+										data-node="ua0erhtio39y">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p><strong>Holy Ghost Church</strong></p>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-rich-text fl-node-8gs13l7mxp0v fl-visible-mobile"
+										 data-node="8gs13l7mxp0v">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p style="text-size: 100%;"><strong>Holy Ghost Church</strong></p>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-rich-text fl-node-s7evtgoqmzpk"
+										 data-node="s7evtgoqmzpk">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p><a href="https://www.omvusa.org" target="_blank" rel="noopener">Staffed by
+												the Oblates of the Virgin Mary (OMV)</a></p>
+											<p><a href="https://www.omvusa.org" target="_blank" rel="noopener">www.omvusa.org</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5c659b399198c fl-col-small" data-node="5c659b399198c">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-rich-text fl-node-gf3qca7eims0"
+										 data-node="gf3qca7eims0">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p style="text-align: center;"><span style="color: #590305; font-size: 18px;"><strong>Mass Times</strong></span>
+											</p>
+											<p><span style="color: #000000; font-size: 14px;"><span
+													style="text-decoration: underline;"><strong>Sunday Mass:<br/>
+</strong></span><strong>  Saturday Vigil:</strong> 4 PM</span><br/>
+												<span style="color: #000000; font-size: 14px;"><strong>  Sunday: </strong>7 AM, 8:30 AM, 10 AM (Latin),</span><br/>
+												<span
+														style="color: #000000; font-size: 14px;">Noon, 2 PM (Español), 5:10 PM</span>
+											</p>
+											<p><span style="text-decoration: underline; color: #000000; font-size: 14px;"><strong>Weekday Mass:</strong></span><br/>
+												<span style="color: #000000; font-size: 14px;"><strong>  Mon - Fri:</strong> 7 AM, 11:30 AM</span><br/>
+												<span style="color: #000000; font-size: 14px;"><strong>  Saturday:</strong> 8 AM</span>
+											</p>
+											<p>&nbsp;</p>
+										</div>
+									</div>
+								</div>
+								<div id="head3icons"
+										 class="fl-module fl-module-icon-group fl-node-5c65bdcca3ea3 fl-visible-mobile"
+										 data-node="5c65bdcca3ea3">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-group">
+	<span class="fl-icon">
+								<a href="https://www.facebook.com/holyghostchurch" target="_blank" rel="noopener">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+			</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="head3menurow" class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c659b399198f"
+				 data-node="5c659b399198f">
+			<div class="fl-row-content-wrap">
+				<div class="uabb-row-separator uabb-top-row-separator">
+				</div>
+				<div class="fl-row-content fl-row-full-width fl-node-content">
+
+					<div
+							class="fl-col-group fl-node-5c659b3991990 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width"
+							data-node="5c659b3991990">
+						<div class="fl-col fl-node-5c659b3991992" data-node="5c659b3991992">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-pp-advanced-menu fl-node-5c81e4426d568"
+										 data-node="5c81e4426d568">
+									<div class="fl-module-content fl-node-content">
+										<div
+												class="pp-advanced-menu pp-advanced-menu-accordion-collapse pp-menu-default pp-menu-align-left">
+											<div class="pp-advanced-menu-mobile-toggle hamburger-label">
+												<div class="pp-hamburger" tabindex="0" role="button" aria-label="Menu">
+													<div class="pp-hamburger-box">
+														<div class="pp-hamburger-inner"></div>
+													</div>
+												</div>
+												<span class="pp-advanced-menu-mobile-toggle-label">Menu</span></div>
+											<div class="pp-clear"></div>
+											<nav class="pp-menu-nav" aria-label="Main Menu" itemscope="itemscope"
+													 itemtype="https://schema.org/SiteNavigationElement">
+
+												<ul id="menu-main-menu"
+														class="menu pp-advanced-menu-horizontal pp-toggle-arrows">
+													<li id="menu-item-29"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+														<a href="https://holyghostchurch.org/" tabindex="0" role="link"><span
+																class="menu-item-text">Home</span></a></li>
+													<li id="menu-item-298"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/about-us/" tabindex="0" role="link"><span
+															class="menu-item-text">About Us</span></a></li>
+													<li id="menu-item-1224"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/schedule/" tabindex="0" role="link"><span
+															class="menu-item-text">Schedule</span></a></li>
+													<li id="menu-item-41"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/sacraments/" tabindex="0"
+															role="link"><span class="menu-item-text">Sacraments</span></a></li>
+													<li id="menu-item-330"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/weddings/" tabindex="0" role="link"><span
+															class="menu-item-text">Weddings</span></a></li>
+													<li id="menu-item-322"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/funerals/" tabindex="0" role="link"><span
+															class="menu-item-text">Funerals</span></a></li>
+													<li id="menu-item-1307"
+															class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1306 current_page_item">
+														<a href="https://holyghostchurch.org/social-ministry/"
+															 aria-current="page" tabindex="0" role="link"><span
+																class="menu-item-text">Social Ministry</span></a></li>
+													<li id="menu-item-73"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/parish-activities/" tabindex="0"
+															role="link"><span class="menu-item-text">Parish Activities</span></a>
+													</li>
+													<li id="menu-item-99"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/our-history/" tabindex="0"
+															role="link"><span class="menu-item-text">Our History</span></a></li>
+													<li id="menu-item-165"
+															class="online-donation menu-item menu-item-type-custom menu-item-object-custom">
+														<a href="https://secure.myvanco.com/L-ZFJ1" tabindex="0"
+															 role="link"><span class="menu-item-text">Online Donation</span></a>
+													</li>
+													<li id="menu-item-134"
+															class="menu-item menu-item-type-custom menu-item-object-custom"><a
+															href="#footer" tabindex="0" role="link"><span class="menu-item-text">Our Location</span></a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5c659b3991998 fl-col-small" data-node="5c659b3991998">
+							<div class="fl-col-content fl-node-content">
+								<div id="head3icons"
+										 class="fl-module fl-module-icon-group fl-node-5c659b399198d fl-visible-desktop-medium"
+										 data-node="5c659b399198d">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-group">
+	<span class="fl-icon">
+								<a href="https://www.facebook.com/holyghostchurch" target="_blank" rel="noopener">
+							<i class="ua-icon ua-icon-facebook22" aria-hidden="true"></i>
+						</a>
+			</span>
+											<span class="fl-icon">
+								<a href="https://www.instagram.com/holyghostdenver" target="_blank" rel="noopener">
+							<i class="ua-icon ua-icon-instagram" aria-hidden="true"></i>
+						</a>
+			</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="uabb-js-breakpoint" style="display: none;"></div>
+	<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+		<div class="fl-content-full container">
+			<div class="row">
+				<div class="fl-content col-md-12">
+					<article class="fl-post post-1306 page type-page status-publish hentry" id="fl-post-1306"
+									 itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+						<div class="fl-post-content clearfix" itemprop="text">
+							<div
+									class="fl-builder-content fl-builder-content-1306 fl-builder-content-primary fl-builder-global-templates-locked"
+									data-post-id="1306">
+								<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-8xfl4pe275o9"
+										 data-node="8xfl4pe275o9">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-kfjptvuh1g0x" data-node="kfjptvuh1g0x">
+												<div class="fl-col fl-node-ys18bgerowv7" data-node="ys18bgerowv7">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-pp-heading fl-node-qai893vmn214"
+																 data-node="qai893vmn214">
+															<div class="fl-module-content fl-node-content">
+																<div class="pp-heading-content">
+																	<div class="pp-heading  pp-left">
+
+																		<h1 class="heading-title">
+
+
+																			<span class="title-text pp-primary-title">Mother Teresa Social Ministry</span>
+
+
+																		</h1>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-button fl-node-3mpjl8tg7190" data-node="3mpjl8tg7190">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-button-wrap fl-button-width-auto fl-button-center">
+											<a href="https://holyghostchurch.org" target="_self" class="fl-button" role="button">
+												<span class="fl-button-text">Main Website</span>
+											</a>
+										</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-3qmkbzefi8tr"
+										 data-node="3qmkbzefi8tr">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-awvlxrbym4n8" data-node="awvlxrbym4n8">
+												<div class="fl-col fl-node-i57t91fynk82 fl-col-has-cols"
+														 data-node="i57t91fynk82">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-pp-heading fl-node-muyv7ljkfsar"
+																 data-node="muyv7ljkfsar">
+															<div class="fl-module-content fl-node-content">
+																<div class="pp-heading-content">
+																	<div class="pp-heading  pp-center">
+
+																		<h2 class="heading-title">
+
+
+																			<span class="title-text pp-primary-title">Social Ministry Services We Provide</span>
+
+
+																		</h2>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+														<div class="fl-module fl-module-pp-heading fl-node-vgf1eoiunk84"
+																 data-node="vgf1eoiunk84">
+															<div class="fl-module-content fl-node-content">
+																<div class="pp-heading-content">
+																	<div class="pp-heading  pp-center">
+
+																		<h2 class="heading-title">
+
+
+                                      <span
+																					class="title-text pp-primary-title">Material Assistance</span>
+
+
+																		</h2>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+														<div
+																class="fl-col-group fl-node-dfkor5stzjp4 fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center"
+																data-node="dfkor5stzjp4">
+															<div class="fl-col fl-node-5qarez3jkodm fl-col-small"
+																	 data-node="5qarez3jkodm">
+																<div class="fl-col-content fl-node-content">
+																	<div class="fl-module fl-module-pp-image fl-node-xpb5fc7lntqi"
+																			 data-node="xpb5fc7lntqi">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="pp-photo-container">
+																				<div
+																						class="pp-photo pp-photo-align-center pp-photo-align-responsive-default"
+																						itemscope itemtype="http://schema.org/ImageObject">
+																					<div class="pp-photo-content">
+																						<div class="pp-photo-content-inner">
+																							<img fetchpriority="high" decoding="async" width="234"
+																									 height="280" class="pp-photo-img wp-image-75"
+																									 src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/10.jpg"
+																									 alt="Holy Ghost Church Catholic Church"
+																									 itemprop="image" title="10"/>
+																							<div class="pp-overlay-bg"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="fl-col fl-node-hwvjxcesz8tb" data-node="hwvjxcesz8tb">
+																<div class="fl-col-content fl-node-content">
+																	<div class="fl-module fl-module-pp-iconlist fl-node-a8exnpf6grto"
+																			 data-node="a8exnpf6grto">
+																		<div class="fl-module-content fl-node-content">
+
+																			<div class="pp-icon-list pp-user-agent-firefox">
+																				<ul class="pp-icon-list-items pp-list-type-icon">
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-0">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">Sandwiches served (usually in front of church; see schedule above)</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-1">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">Socks (available year-round); hats & gloves (October-April)</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-2">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">Personal care items (soap, razors, shampoo, toothbrushes, etc.)</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-3">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">$$ for work tools (must have regular employment)</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-4">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">$$ for vital records (birth and death certificates)</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-5">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">$$ for Colorado I.D. cards and driver's licenses</span>
+																					</li>
+
+
+																					<li class="pp-icon-list-item pp-icon-list-item-6">
+                                            <span
+																								class="pp-list-item-icon fas fa-check-square"></span>
+																						<span class="pp-list-item-text">Assistance filling out forms (a veces hay alguien que ayuda llenar formularios en español)</span>
+																					</li>
+
+
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="fl-module fl-module-rich-text fl-node-pxl5a0uvzb12"
+																 data-node="pxl5a0uvzb12">
+															<div class="fl-module-content fl-node-content">
+																<div class="fl-rich-text">
+																	<p><strong>Referrals available for services we do not provide
+																		directly:</strong> food banks, food lines, shelters, mental
+																		health assistance, clothing banks, medical services, and
+																		showers.</p>
+																	<p><em>We do NOT provide: gas vouchers, rent assistance, bus
+																		tokens/passes, $ for travel, food baskets or motel
+																		vouchers.</em></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="fl-col-group fl-node-3jit971dfusw" data-node="3jit971dfusw">
+												<div class="fl-col fl-node-xdcw29l3jt71" data-node="xdcw29l3jt71">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-button fl-node-y1xmbc80qh6d"
+																 data-node="y1xmbc80qh6d">
+															<div class="fl-module-content fl-node-content">
+																<div class="fl-button-wrap fl-button-width-auto fl-button-center">
+																	<a href="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/FALL2023printable.pdf"
+																		 download target="_self" class="fl-button" role="button">
+                                    <span
+																				class="fl-button-text">Read our Fall 2023 Newsletter</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-brafsn4dm5iz"
+										 data-node="brafsn4dm5iz">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-a4x7j6lvrodm" data-node="a4x7j6lvrodm">
+												<div class="fl-col fl-node-4t5mpy3wj0s9 fl-col-has-cols"
+														 data-node="4t5mpy3wj0s9">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-pp-heading fl-node-60ejhw3y1x9c"
+																 data-node="60ejhw3y1x9c">
+															<div class="fl-module-content fl-node-content">
+																<div class="pp-heading-content">
+																	<div class="pp-heading  pp-center">
+
+																		<h2 class="heading-title">
+
+
+																			<span class="title-text pp-primary-title">Fundraising Campaign Fall 2023</span>
+
+
+																		</h2>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+														<div
+																class="fl-col-group fl-node-3hyefuwcsbgd fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center"
+																data-node="3hyefuwcsbgd">
+															<div class="fl-col fl-node-i9egvxh5nklw" data-node="i9egvxh5nklw">
+																<div class="fl-col-content fl-node-content">
+																	<div class="fl-module fl-module-pp-image fl-node-6oew2pgd7it4"
+																			 data-node="6oew2pgd7it4">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="pp-photo-container">
+																				<div
+																						class="pp-photo pp-photo-align-center pp-photo-align-responsive-default"
+																						itemscope itemtype="http://schema.org/ImageObject">
+																					<div class="pp-photo-content">
+																						<div class="pp-photo-content-inner">
+																							<img loading="lazy" decoding="async" width="850"
+																									 height="1100" class="pp-photo-img wp-image-1324"
+																									 src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/20231019-TEN-FOR-TERESA-online-graphic.jpg"
+																									 alt="20231019 TEN FOR TERESA online graphic"
+																									 itemprop="image"
+																									 srcset="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/20231019-TEN-FOR-TERESA-online-graphic.jpg 850w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/20231019-TEN-FOR-TERESA-online-graphic-232x300.jpg 232w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/20231019-TEN-FOR-TERESA-online-graphic-791x1024.jpg 791w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2023/10/20231019-TEN-FOR-TERESA-online-graphic-768x994.jpg 768w"
+																									 sizes="(max-width: 850px) 100vw, 850px"
+																									 title="20231019 TEN FOR TERESA online graphic"/>
+																							<div class="pp-overlay-bg"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="fl-module fl-module-rich-text fl-node-mqbh69ec4kwi"
+																			 data-node="mqbh69ec4kwi">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="fl-rich-text">
+																				<p style="text-align: center;">As of October 19, 2023, we
+																					have surpassed the $1,000 mark!</p>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="fl-module fl-module-button fl-node-3mpjl8tg7190"
+																			 data-node="3mpjl8tg7190">
+																		<div class="fl-module-content fl-node-content">
+																			<div
+																					class="fl-button-wrap fl-button-width-auto fl-button-center">
+																				<a href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=oGS9iwo5dZsrQxM9vkLUxG3QzaAgfuSiz1PJIRAx8hHkw5yUrJgiWtOG28suKd21ngAChfSzoLn2FbB3gSvBfemwI-SCEPoM6l-vRnVAvzgse-eVfA-OL3y5ksMqpmXakuv47k32_BlkCLUJ0OaLu1K57SZ4joCsMmNZY0qcvxw=&ver=3"
+																					 target="_self" class="fl-button" role="button">
+																					<span class="fl-button-text">Donate now</span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-jv4nx3qlg0am"
+										 data-node="jv4nx3qlg0am">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-4s9lpw6q1jza" data-node="4s9lpw6q1jza">
+												<div class="fl-col fl-node-sl3mhctuz0bv" data-node="sl3mhctuz0bv">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-pp-heading fl-node-ptqdl9fzi4ms"
+																 data-node="ptqdl9fzi4ms">
+															<div class="fl-module-content fl-node-content">
+																<div class="pp-heading-content">
+																	<div class="pp-heading  pp-center">
+
+																		<h2 class="heading-title">
+
+
+																			<span class="title-text pp-primary-title">Our Ministry</span>
+
+
+																		</h2>
+
+																	</div>
+																	<div class="pp-sub-heading">
+																		<p>In addition to limited material assistance, we provide
+																			clients with guidance, support, and referrals in order to meet
+																			a wider range of client needs more effectively.</p></div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-eb8gx2p4slhz"
+										 data-node="eb8gx2p4slhz">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-ei7zlagrf4wo" data-node="ei7zlagrf4wo">
+												<div class="fl-col fl-node-qoujsl583pc6 fl-col-has-cols"
+														 data-node="qoujsl583pc6">
+													<div class="fl-col-content fl-node-content">
+
+														<div
+																class="fl-col-group fl-node-cza7use421x3 fl-col-group-nested fl-col-group-equal-height fl-col-group-align-top"
+																data-node="cza7use421x3">
+															<div class="fl-col fl-node-1jfpqnzikl0g fl-col-small"
+																	 data-node="1jfpqnzikl0g">
+																<div class="fl-col-content fl-node-content">
+																	<div class="fl-module fl-module-pp-heading fl-node-2j5uf0ek78nz"
+																			 data-node="2j5uf0ek78nz">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="pp-heading-content">
+																				<div class="pp-heading  pp-center">
+
+																					<h3 class="heading-title">
+
+
+                                            <span
+																								class="title-text pp-primary-title">Sandwich Line</span>
+
+
+																					</h3>
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																	<div class="fl-module fl-module-pp-image fl-node-1rwm0vxj56zg"
+																			 data-node="1rwm0vxj56zg">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="pp-photo-container">
+																				<div
+																						class="pp-photo pp-photo-align-center pp-photo-align-responsive-default"
+																						itemscope itemtype="http://schema.org/ImageObject">
+																					<div class="pp-photo-content">
+																						<div class="pp-photo-content-inner">
+																							<img loading="lazy" decoding="async" width="301"
+																									 height="185" class="pp-photo-img wp-image-201"
+																									 src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/2-3.jpg"
+																									 alt="Holy Ghost Church Catholic Church"
+																									 itemprop="image"
+																									 srcset="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/2-3.jpg 301w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2019/03/2-3-300x184.jpg 300w"
+																									 sizes="(max-width: 301px) 100vw, 301px"
+																									 title="2"/>
+																							<div class="pp-overlay-bg"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="fl-module fl-module-rich-text fl-node-x78ar42pk1os"
+																			 data-node="x78ar42pk1os">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="fl-rich-text">
+																				<p style="text-align: center;">Sandwich Line: Mon - Sat, 10
+																					- 10:30 AM</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="fl-col fl-node-dij03762b1fz" data-node="dij03762b1fz">
+																<div class="fl-col-content fl-node-content">
+																	<div class="fl-module fl-module-pp-heading fl-node-7js2g04w98it"
+																			 data-node="7js2g04w98it">
+																		<div class="fl-module-content fl-node-content">
+																			<div class="pp-heading-content">
+																				<div class="pp-heading  pp-center">
+
+																					<h3 class="heading-title">
+
+
+																						<span class="title-text pp-primary-title">Social Ministry Donations</span>
+
+
+																					</h3>
+
+																				</div>
+																				<div class="pp-sub-heading">
+																					<p><strong>Currently, we gratefully accept items for both
+																						men and women, including personal care items,
+																						toiletries, new hats, socks, gloves, some snack items
+																						(enough to serve at least 150) to be served in the
+																						sandwich line, and financial contributions.</strong></p>
+																					<p>If a group would like to donate pre-made sandwiches or
+																						snacks for our sandwich line, please call first<br/><a
+																								href="tel:3032973441">(303) 297-3441.</a></p>
+																					<p><strong>Thank You!</strong></p></div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-x1dteic6glqs"
+										 data-node="x1dteic6glqs">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-2nh3jq6s54cv" data-node="2nh3jq6s54cv">
+												<div class="fl-col fl-node-b3ue8092nyv7" data-node="b3ue8092nyv7">
+													<div class="fl-col-content fl-node-content">
+														<div class="fl-module fl-module-rich-text fl-node-1utiv4qzylkj"
+																 data-node="1utiv4qzylkj">
+															<div class="fl-module-content fl-node-content">
+																<div class="fl-rich-text">
+																	<h3 style="text-align: center;">Holy Ghost Social Ministry
+																		Office</h3>
+																	<p style="text-align: center;">1900 California St, Denver,
+																		Colorado 80202<br/>
+																		Phone: <a href="tel:3032973441">(303) 297-3441</a><br/>
+																		<a href="social@holyghostchurch.org" target="_blank"
+																			 rel="noopener">social@holyghostchurch.org</a><br/>
+																		<a href="http://www.holyghostchurch.info/" target="_blank"
+																			 rel="noopener">www.holyghostchurch</a><a
+																				href="http://www.holyghostchurch.info/">.</a><a
+																				href="https://holyghostchurch.org/">org</a><br/>
+																		Walk-In Services Available: Mon-Fri 9:00 AM - 11:00 AM and 2:00
+																		PM - 4:00 PM<br/>
+																		Sandwich Line: Mon-Sat, 10-10:30 AM</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-jg9zv104h7q8"
+										 data-node="jg9zv104h7q8">
+									<div class="fl-row-content-wrap">
+										<div class="uabb-row-separator uabb-top-row-separator">
+										</div>
+										<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+											<div class="fl-col-group fl-node-g7pwnk54urhd" data-node="g7pwnk54urhd">
+												<div class="fl-col fl-node-l21dxqih4eks" data-node="l21dxqih4eks">
+													<div class="fl-col-content fl-node-content">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="uabb-js-breakpoint" style="display: none;"></div>
+						</div><!-- .fl-post-content -->
+
+					</article>
+
+					<!-- .fl-post -->
+				</div>
+			</div>
+		</div>
+
+
+	</div><!-- .fl-page-content -->
+	<footer class="fl-builder-content fl-builder-content-122 fl-builder-global-templates-locked"
+					data-post-id="122" data-type="footer" itemscope="itemscope"
+					itemtype="http://schema.org/WPFooter">
+		<div id="footer" class="fl-row fl-row-full-width fl-row-bg-none fl-node-5c82313181372"
+				 data-node="5c82313181372">
+			<div class="fl-row-content-wrap">
+				<div class="uabb-row-separator uabb-top-row-separator">
+				</div>
+				<div class="fl-row-content fl-row-full-width fl-node-content">
+
+					<div class="fl-col-group fl-node-5c823131a35c3" data-node="5c823131a35c3">
+						<div class="fl-col fl-node-5c823131a385d" data-node="5c823131a385d">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-map fl-node-5c8231317faa7"
+										 data-node="5c8231317faa7">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-map">
+											<iframe
+													src="https://www.google.com/maps/embed/v1/place?q=1900+California+ST.+Denver%2C+%0ACO+80202&key=AIzaSyD09zQ9PNDNNy9TadMuzRV_UsPUoWKntt8"
+													aria-hidden="true"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer2body" class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c822f13e044b"
+				 data-node="5c822f13e044b">
+			<div class="fl-row-content-wrap">
+				<div class="uabb-row-separator uabb-top-row-separator">
+				</div>
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+					<div class="fl-col-group fl-node-5c822f13e044c" data-node="5c822f13e044c">
+						<div class="fl-col fl-node-5c822f13e0452 fl-col-small" data-node="5c822f13e0452">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-heading fl-node-5c822f13e0453"
+										 data-node="5c822f13e0453">
+									<div class="fl-module-content fl-node-content">
+										<h3 class="fl-heading">
+											<span class="fl-heading-text">Site Links</span>
+										</h3>
+									</div>
+								</div>
+								<div class="fl-module fl-module-pp-advanced-menu fl-node-5c822f7d02184"
+										 data-node="5c822f7d02184">
+									<div class="fl-module-content fl-node-content">
+										<div
+												class="pp-advanced-menu pp-advanced-menu-accordion-collapse pp-menu-default pp-menu-align-left">
+											<div class="pp-clear"></div>
+											<nav class="pp-menu-nav" aria-label="Main Menu" itemscope="itemscope"
+													 itemtype="https://schema.org/SiteNavigationElement">
+
+												<ul id="menu-main-menu-1"
+														class="menu pp-advanced-menu-vertical pp-toggle-arrows">
+													<li id="menu-item-29"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+														<a href="https://holyghostchurch.org/" tabindex="0" role="link"><span
+																class="menu-item-text">Home</span></a></li>
+													<li id="menu-item-298"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/about-us/" tabindex="0" role="link"><span
+															class="menu-item-text">About Us</span></a></li>
+													<li id="menu-item-1224"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/schedule/" tabindex="0" role="link"><span
+															class="menu-item-text">Schedule</span></a></li>
+													<li id="menu-item-41"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/sacraments/" tabindex="0"
+															role="link"><span class="menu-item-text">Sacraments</span></a></li>
+													<li id="menu-item-330"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/weddings/" tabindex="0" role="link"><span
+															class="menu-item-text">Weddings</span></a></li>
+													<li id="menu-item-322"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/funerals/" tabindex="0" role="link"><span
+															class="menu-item-text">Funerals</span></a></li>
+													<li id="menu-item-1307"
+															class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1306 current_page_item">
+														<a href="https://holyghostchurch.org/social-ministry/"
+															 aria-current="page" tabindex="0" role="link"><span
+																class="menu-item-text">Social Ministry</span></a></li>
+													<li id="menu-item-73"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/parish-activities/" tabindex="0"
+															role="link"><span class="menu-item-text">Parish Activities</span></a>
+													</li>
+													<li id="menu-item-99"
+															class="menu-item menu-item-type-post_type menu-item-object-page"><a
+															href="https://holyghostchurch.org/our-history/" tabindex="0"
+															role="link"><span class="menu-item-text">Our History</span></a></li>
+													<li id="menu-item-165"
+															class="online-donation menu-item menu-item-type-custom menu-item-object-custom">
+														<a href="https://secure.myvanco.com/L-ZFJ1" tabindex="0"
+															 role="link"><span class="menu-item-text">Online Donation</span></a>
+													</li>
+													<li id="menu-item-134"
+															class="menu-item menu-item-type-custom menu-item-object-custom"><a
+															href="#footer" tabindex="0" role="link"><span class="menu-item-text">Our Location</span></a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5c822f13e0455 fl-col-small" data-node="5c822f13e0455">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-heading fl-node-5c822f13e0459"
+										 data-node="5c822f13e0459">
+									<div class="fl-module-content fl-node-content">
+										<h3 class="fl-heading">
+											<span class="fl-heading-text">Get In Touch!</span>
+										</h3>
+									</div>
+								</div>
+								<div class="fl-module fl-module-icon fl-node-5c822f13e0457"
+										 data-node="5c822f13e0457">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fa fa-map-o" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-5c822f13e0457" class="fl-icon-text fl-icon-text-wrap">
+												<div>
+													<div class="design-consultation-form-input-value">1900 California
+														St. <br/>Denver, CO 80202
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-icon fl-node-5c822f13e0456"
+										 data-node="5c822f13e0456">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-5c822f13e0456" class="fl-icon-text fl-icon-text-wrap">
+												<p><a href="tel:3032921556">(303) 292-1556</a></p></div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-icon fl-node-5c822f13e0458"
+										 data-node="5c822f13e0458">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-5c822f13e0458" class="fl-icon-text fl-icon-text-wrap">
+												<p><a
+														href="mailto:office@holyghostchurch.org">office@holyghostchurch.org</a>
+												</p></div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-icon fl-node-1wny8je9236p" data-node="1wny8je9236p">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-1wny8je9236p" class="fl-icon-text fl-icon-text-wrap">
+												<p><a href="tel:3032400297">Emergency Pager (303) 240-0297</a></p></div>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-rich-text fl-node-5e8769c5c278a"
+										 data-node="5e8769c5c278a">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p><strong>Join Flocknote to receive our updates and news!</strong><br/>
+												It's easy to sign up. You may either call the Parish Office and provide your
+												name and email address, or text to join "holyghost" to 84576 from your cell
+												phone, or <em><a href="https://holyghostchurch.flocknote.com/"
+																				 target="_blank" rel="noopener">register online
+													here</a></em>.</p>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-photo fl-node-5e8769336d2dd"
+										 data-node="5e8769336d2dd">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-photo fl-photo-align-center" itemscope
+												 itemtype="https://schema.org/ImageObject">
+											<div class="fl-photo-content fl-photo-img-png">
+												<a href="https://holyghostchurch.flocknote.com/" target="_blank"
+													 rel="noopener" itemprop="url">
+													<img loading="lazy" decoding="async" width="300" height="300"
+															 class="fl-photo-img wp-image-603"
+															 src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2020/04/Website-banner-square-blue-300x300.png"
+															 alt="FLOCKNOTE" itemprop="image" title="Website-banner-square-blue"
+															 srcset="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2020/04/Website-banner-square-blue-300x300.png 300w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2020/04/Website-banner-square-blue-150x150.png 150w, https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/2020/04/Website-banner-square-blue.png 500w"
+															 sizes="(max-width: 300px) 100vw, 300px"/>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5c822f13e044d fl-col-small" data-node="5c822f13e044d">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-icon fl-node-5c8230b847cb8"
+										 data-node="5c8230b847cb8">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fas fa-clock" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-5c8230b847cb8" class="fl-icon-text fl-icon-text-wrap">
+												<p><strong>Parish Office Hours:</strong><br/>9:00 AM - 5:00 PM Monday -
+													Thursday; Parish Office closed Fridays</p>
+												<p><strong>Social Ministry Office Walk-In Hours:<br/></strong>9:00 AM -
+													11:00 AM and 2:00 PM - 4:00 PM Monday - Friday<strong><br/></strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="head3icons"
+										 class="fl-module fl-module-icon-group fl-node-5c8231038ff39 fl-visible-desktop-medium"
+										 data-node="5c8231038ff39">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-group">
+	<span class="fl-icon">
+								<a href="https://www.facebook.com/holyghostchurch" target="_blank" rel="noopener">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+			</span>
+											<span class="fl-icon">
+								<a href="https://www.instagram.com/holyghostdenver" target="_blank" rel="noopener">
+							<i class="ua-icon ua-icon-instagram" aria-hidden="true"></i>
+						</a>
+			</span>
+										</div>
+									</div>
+								</div>
+								<div id="head3icons"
+										 class="fl-module fl-module-icon-group fl-node-5c8248ea40a49 fl-visible-mobile"
+										 data-node="5c8248ea40a49">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-group">
+	<span class="fl-icon">
+								<a href="https://www.facebook.com/holyghostchurch" target="_blank" rel="noopener">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+			</span>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-icon fl-node-ahr02bdkwgni" data-node="ahr02bdkwgni">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="ua-icon ua-icon-info" aria-hidden="true"></i>
+					</span>
+											<div id="fl-icon-text-ahr02bdkwgni" class="fl-icon-text fl-icon-text-wrap">
+												<h2>Safe Environment</h2>
+												<p>Holy Ghost Church is committed to ensuring as safe an environment as
+													possible for our children and at-risk adults to thrive as a community of
+													faith. Our Safe Environment Coordinator is <a
+															href="mailto:frrafael@holyghostchurch.org"><u>Fr. Rafael
+														Solorio</u></a>. We share this commitment with the <a
+															href="https://archden.org/protection/"><u>Archdiocese of
+														Denver</u></a>.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer2copyright"
+				 class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c822f13e0443"
+				 data-node="5c822f13e0443">
+			<div class="fl-row-content-wrap">
+				<div class="uabb-row-separator uabb-top-row-separator">
+				</div>
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+					<div
+							class="fl-col-group fl-node-5c822f13e0447 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width"
+							data-node="5c822f13e0447">
+						<div class="fl-col fl-node-5c822f13e0463 fl-col-small" data-node="5c822f13e0463">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-rich-text fl-node-5c822f13e044a copyright"
+										 data-node="5c822f13e044a">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p><span style="font-size: 14px;">© 2023, Holy Ghost Catholic Church. All Rights Reserved.</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl-col fl-node-5c822f13e0449 fl-col-small" data-node="5c822f13e0449">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-html fl-node-5c822f13e0469 godaddyfooter"
+										 data-node="5c822f13e0469">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-html">
+											<div align="right">
+												<a rel="nofollow" href="https://www.godaddy.com/websites/web-design"
+													 target="_blank"><img alt="GoDaddy Web Design"
+																								src="//nebula.wsimg.com/aadc63d8e8dbd533470bdc4e350bc4af?AccessKeyId=B7351D786AE96FEF6EBB&disposition=0&alloworigin=1"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="uabb-js-breakpoint" style="display: none;"></div>
+</div><!-- .fl-page -->
+<a href="#" id="fl-to-top"><span class="sr-only">Scroll To Top</span><i class="fas fa-chevron-up"
+																																				aria-hidden="true"></i></a>
+<script
+		src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-plugin/cache/1306-layout.js?ver=09b412b013544d4d43e932e625a9d57f&amp;time=1722343624"
+		id="fl-builder-layout-1306-js"></script>
+<script
+		src="https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.5.4.3&amp;time=1722343624"
+		id="jquery-throttle-js"></script>
+<script
+		src="https://n8le08.p3cdn1.secureserver.net/wp-content/uploads/bb-plugin/cache/1795ab654965aa96dba54eb4b45f5551-layout-bundle.js?ver=2.5.4.3-1.4.2&amp;time=1722343624"
+		id="fl-builder-layout-bundle-1795ab654965aa96dba54eb4b45f5551-js"></script>
+<script
+		src="https://n8le08.p3cdn1.secureserver.net/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.5.4.3&amp;time=1722343624"
+		id="jquery-magnificpopup-js"></script>
+<script id="fl-automator-js-extra">
+	var themeopts = {"medium_breakpoint": "1200", "mobile_breakpoint": "768"};
+</script>
+<script
+		src="https://n8le08.p3cdn1.secureserver.net/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.11&amp;time=1722343624"
+		id="fl-automator-js"></script>
+<script>'undefined' === typeof _trfq || (window._trfq = []);
+'undefined' === typeof _trfd && (window._trfd = []), _trfd.push(
+		{'tccl.baseHost': 'secureserver.net'}), _trfd.push({'ap': 'wpaas'},
+		{'server': '843a3e7a-cc1f-bdf9-04ae-f0eb4c6b7e7c.secureserver.net'}, {'pod': 'P3NLWPPOD09'},
+		{'storage': 'p3cephmah003pod09_data13'}, {'xid': '42120934'}, {'wp': '6.5.5'},
+		{'php': '8.0.30.2'}, {'loggedin': '0'}, {'cdn': '1'}, {'builder': 'beaver-builder'},
+		{'theme': 'bb-theme'}, {'wds': '0'}, {'wp_alloptions_count': '229'},
+		{'wp_alloptions_bytes': '99761'})</script>
+<script>window.addEventListener('click', function (elem) {
+	var _elem$target, _elem$target$dataset, _window, _window$_trfq;
+	return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null
+	|| _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null
+	|| _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window)
+	=== null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null
+	|| _window$_trfq === void 0 ? void 0 : _window$_trfq.push(
+			["cmdLogEvent", "click", elem.target.dataset.eid]));
+});</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<script src='https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js'
+				onload="window.tti.calculateTTI()"></script>
+</body>
+</html>
