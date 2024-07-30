@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Feed</title>
+  <link rel="stylesheet" href="donation-feed.css">
+
+</head>
+<body>
+<div class="carousel">
+  <div class="card-container">
+    <div class="card">Elements</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    <div class="card">Elements</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+  </div>
+</div>
+</body>
+<script>
+  const listOfCardElements = document.querySelectorAll('.card');
+  const cardContainer = document.querySelector('.card-container');
+
+  listOfCardElements.forEach((cardElement, index) => {
+    cardElement.addEventListener('click', () => {
+      const cardWidth = cardElement.offsetWidth;
+      const cardContainerWidth = cardContainer.offsetWidth;
+      const scrollLeft = index * cardWidth - (cardContainerWidth / 2) + (cardWidth / 2);
+      cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    });
+  });</script>
+</html>
