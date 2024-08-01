@@ -1559,16 +1559,18 @@
 																			</div>
 																		</div>
 																	</div>
-																	<div class="fl-module fl-module-button fl-node-3mpjl8tg7190"
-																			 data-node="3mpjl8tg7190">
-																		<div class="fl-module-content fl-node-content">
-																			<div
-																					class="fl-button-wrap fl-button-width-auto fl-button-center">
-																				<a href="https://secure.myvanco.com/L-ZFJ1/home"
-																					 target="_self" class="fl-button" role="button">
-																					<span class="fl-button-text">Donate now</span>
-																				</a>
-																			</div>
+																	<div class="fl-module fl-module-html fl-node-your-node-id" style="overflow: hidden;">
+																		<div class="fl-module-content fl-node-content" style="overflow: hidden;">
+																			<iframe src="donation-feed.html" id="donation-iframe" style="overflow: hidden;"  width="100%" frameborder="0"></iframe>
+																			<script>
+																				// Get the iframe element
+																				const iframe = document.getElementById('donation-iframe');
+
+																				// Set the iframe's height to the content's height
+																				iframe.onload = function() {
+																					iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 15) + 'px';
+																				};
+																			</script>
 																		</div>
 																	</div>
 																</div>

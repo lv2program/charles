@@ -1,6 +1,6 @@
 .carousel {
   width: 100%; /* Width of carousel */
-  height: 166px; /* Height of carousel */
+  height: auto; /* Height of carousel */
 }
 
 .card-container {
@@ -12,6 +12,11 @@
   overflow-y: hidden; /* Hidden overflow in vertical scroll */
   scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
   gap: 8px; /* Set gap between cards */
+  background-image: url(https://holyghostchurch.org/wp-content/uploads/2019/03/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .card-container::-webkit-scrollbar {
@@ -68,7 +73,7 @@
 }
 
 .donate-button {
-  background-color: #007bff;
+  background-color: #590305;
   border: none;
   border-radius: 4px;
   color: white;
@@ -83,3 +88,4 @@
 .donate-button:hover {
   background-color: #0056b3;
 }
+
