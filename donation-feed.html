@@ -9,10 +9,13 @@
 <div class="carousel">
   <div class="card-container">
     <div class="card">
+      <div class="card-top">
       <h2 class="card-title"></h2>
       <p class="card-description"></p>
       <p class="card-short-description"></p>
+      </div>
       <img class="card-image" src="" alt="">
+      <button type="button" class="donate-button" data-campaign-id=""></button>
     </div>
   </div>
 </div>
@@ -28,11 +31,22 @@
       data.forEach(element => {
         const newCard = clonedNode.cloneNode(true);
         campaign = element.content;
+        const campaignId = element.id;
         newCard.querySelector('.card-title').textContent = campaign.title;
         newCard.querySelector('.card-description').textContent = campaign.description[0].insert;
         newCard.querySelector('.card-short-description').textContent = campaign.shortDescription;
         newCard.querySelector('.card-image').src = campaign.detail.image.url;
         newCard.querySelector('.card-image').alt = campaign.detail.image.altText;
+
+        const donateButton = newCard.querySelector('.donate-button');
+        donateButton.setAttribute('data-campaign-id', campaignId);
+        donateButton.textContent = "Donate";
+        donateButton.textContent = campaign.detail.callToActionText || "Donate";
+        donateButton.addEventListener('click', () => {
+          const campaignId = donateButton.getAttribute('data-campaign-id');
+          const destinationUrl = `https://secure.myvanco.com/L-ZFJ1/campaign/${campaignId}`;
+          window.open(destinationUrl, '_blank');
+        });
 
         cardContainer.appendChild(newCard);
       });
@@ -70,7 +84,7 @@
               "id": "C-13YPP",
               "content": {
                 "title": "Offertory",
-                "description": "[{insert:\"General donations in support of all church programs.\\n\"}]",
+                "description": [{"insert":"General donations in support of all church programs."}],
                 "shortDescription": "General donation; you can specify an unlisted category/cause in the notes here.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -87,7 +101,7 @@
               "id": "C-13YPQ",
               "content": {
                 "title": "Mother Teresa Social Ministry",
-                "description": "[{insert:\"Supports vouchers for ID Cards and Birth Certificates; Sandwich Line.\\n\"}]",
+                "description": [{"insert":"Supports vouchers for ID Cards and Birth Certificates; Sandwich Line."}],
                 "shortDescription": "Supports vouchers for ID Cards and Birth Certificates; Sandwich Line.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -104,7 +118,7 @@
               "id": "C-14STW",
               "content": {
                 "title": "Dinner",
-                "description": "[{insert:\"Spaghetti Dinner April 20, 2024. $15 for adults; children under 5 free.\\n\"}]",
+                "description": [{"insert":"Spaghetti Dinner April 20, 2024. $15 for adults; children under 5 free."}],
                 "shortDescription": "Spaghetti Dinner April 20, 2024. $15 for adults; children under 5 free.",
                 "detail": {
                   "callToActionText": "Join us",
@@ -121,7 +135,7 @@
               "id": "C-13YPH",
               "content": {
                 "title": "Wedding Offering",
-                "description": "[{insert:\"Provide for the church's expenses for your marriage preparation and wedding ceremony.\\n\"}]",
+                "description": [{"insert":"Provide for the church's expenses for your marriage preparation and wedding ceremony."}],
                 "shortDescription": "Wedding deposits and balances",
                 "detail": {
                   "callToActionText": "Donate",
@@ -138,7 +152,7 @@
               "id": "C-13YPR",
               "content": {
                 "title": "Music",
-                "description": "[{insert:\"Provide for our musicians and their equipment so that we can praise the Lord in song! This includes the maintenance of the organ and pianos, as well as sheet music.\\n\"}]",
+                "description": [{"insert":"Provide for our musicians and their equipment so that we can praise the Lord in song! This includes the maintenance of the organ and pianos, as well as sheet music."}],
                 "shortDescription": "For our musicians and their instruments and sheet music.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -155,7 +169,7 @@
               "id": "C-14FHV",
               "content": {
                 "title": "Candles",
-                "description": "[{insert:\"People choose to light votive candles for many reasons, all symbolizing their prayers for a living or deceased person, sometimes through the intercession of a particular saint.\\n\"}]",
+                "description": [{"insert":"People choose to light votive candles for many reasons, all symbolizing their prayers for a living or deceased person, sometimes through the intercession of a particular saint."}],
                 "shortDescription": "Make an offering when you light a candle in church or purchase one to take home.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -172,7 +186,7 @@
               "id": "C-14FE1",
               "content": {
                 "title": "Mass Requests",
-                "description": "[{insert:\"When you request a Mass to be celebrated for a living or deceased person, you invite the whole church, and those attending that specific Mass, to pray for that person, and unite their prayers to the Holy Sacrifice of the Mass. This is a priceless gift!\\n\\nWe must be clear that no offering need be made, monetary or otherwise, at this time. Nevertheless, it is fitting that something be given to the church and the priest celebrating the Mass you requested. The standard offering throughout the United States is $10.\\n\"}]",
+                "description": [{"insert":"When you request a Mass to be celebrated for a living or deceased person, you invite the whole church, and those attending that specific Mass, to pray for that person, and unite their prayers to the Holy Sacrifice of the Mass. This is a priceless gift!We must be clear that no offering need be made, monetary or otherwise, at this time. Nevertheless, it is fitting that something be given to the church and the priest celebrating the Mass you requested. The standard offering throughout the United States is $10."}],
                 "shortDescription": "Your donation at the time you request a Mass to be said for your intentions.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -189,7 +203,7 @@
               "id": "C-13YPK",
               "content": {
                 "title": "Oblates of the Virgin Mary",
-                "description": "[{insert:\"Provide for the needs of the priests and seminarians of the Oblates of the Virgin Mary (OMV) who have served at Holy Ghost since 2001. The OMVs at Holy Ghost are assigned by the Provincial Rector of the St. Ignatius Province of the OMV, based in Boston, MA.\\n\"}]",
+                "description": [{"insert":"Provide for the needs of the priests and seminarians of the Oblates of the Virgin Mary (OMV) who have served at Holy Ghost since 2001. The OMVs at Holy Ghost are assigned by the Provincial Rector of the St. Ignatius Province of the OMV, based in Boston, MA."}],
                 "shortDescription": "Support our Oblates, who have served here since 2001",
                 "detail": {
                   "callToActionText": "Donate",
@@ -206,7 +220,7 @@
               "id": "C-13YPM",
               "content": {
                 "title": "Restoration and Repair",
-                "description": "[{insert:\"From time to time, we have significant projects to maintain the longevity of the functionality and beauty of our church and facility. Donations to this category support these periodic, major projects.\\n\"}]",
+                "description": [{"insert":"From time to time, we have significant projects to maintain the longevity of the functionality and beauty of our church and facility. Donations to this category support these periodic, major projects."}],
                 "shortDescription": "Help keep our church beautiful and functional for decades to come!",
                 "detail": {
                   "callToActionText": "Donate",
@@ -223,7 +237,7 @@
               "id": "C-13YPS",
               "content": {
                 "title": "Maintenance Fund",
-                "description": "[{insert:\"Assist with financing the maintenance of the church, parish hall and rectory.\\n\"}]",
+                "description": [{"insert":"Assist with financing the maintenance of the church, parish hall and rectory."}],
                 "shortDescription": "Help maintain our church, hall and rectory.",
                 "detail": {
                   "callToActionText": "Donate",
@@ -240,7 +254,7 @@
               "id": "C-14FHW",
               "content": {
                 "title": "Respect Life",
-                "description": "[{insert:\"Donations in support of Respect Life activities, including the Life Around the World dinner.\\n\"}]",
+                "description": [{"insert":"Donations in support of Respect Life activities, including the Life Around the World dinner."}],
                 "shortDescription": "Support the defense of all human life!",
                 "detail": {
                   "callToActionText": "Donate",
@@ -257,7 +271,7 @@
               "id": "C-13YPG",
               "content": {
                 "title": "Catholic Faith Camp (LAST NAME)",
-                "description": "[{insert:\"CFC is our spin on Vacation Bible School, and includes skits, lessons, crafts, and Mass with opportunities for Confession and Eucharistic Adoration. 2024 dates: August 5-9.\\n\"}]",
+                "description": [{"insert":"CFC is our spin on Vacation Bible School, and includes skits, lessons, crafts, and Mass with opportunities for Confession and Eucharistic Adoration. 2024 dates: August 5-9."}],
                 "shortDescription": "5 Days of faith-filled activities and crafts August 5-9, 2024",
                 "detail": {
                   "callToActionText": "Donate",
